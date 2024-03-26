@@ -1,0 +1,621 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos generales para el header */
+.main-header {
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el logo */
+.logo-container img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    flex-grow: 1; /* Permite que la barra de navegación ocupe todo el espacio disponible */
+}
+
+/* Estilos para la lista de menú */
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.menu-list li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.menu-list li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor de la fuente */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.menu-list li a:hover {
+    color: grey; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la sección de usuario */
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los iconos */
+.user-icon,
+.search-icon,
+.menu-icon {
+    margin-left: 20px; /* Espacio entre los iconos */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+.user-icon img,
+.search-icon img,
+.menu-icon img {
+    width: 24px; /* Tamaño de los iconos */
+    height: 24px;
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Estilos para la imagen de fondo */
+.imagenFondo {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.8; /* Ajusta el nivel de transparencia */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Agrega una transición suave */
+}
+/* Estilos para el botón "SHOP NOW" */
+.shop-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Cambia el color */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+
+.image-container:hover .shop-now {
+    opacity: 1; /* Muestra el botón al pasar el mouse por encima */
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/* Estilos para el logo */
+.logo-container img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+/* Estilos para la navegación */
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.footer-nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para la sección de información */
+.info h3 {
+    margin-top: 20px; /* Espacio arriba del título */
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.info ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+}
+
+.info ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-media a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    margin-right: 10px; /* Espacio entre los enlaces */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.main.iniciO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo para el contenedor principal */
+.contactO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustar la altura según necesidades */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilo para la sección */
+.contactO section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ancho máximo del formulario */
+    width: 100%;
+}
+
+/* Estilo para el título */
+.contactO section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para las etiquetas */
+.formularioContacto label {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los campos de entrada */
+.formularioContacto input[type="text"],
+.formularioContacto input[type="email"],
+.formularioContacto textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Estilo para el botón de enviar */
+.formularioContacto input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.formularioContacto input[type="submit"]:hover {
+    background-color: black;
+}
+
+.imagenRopa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.seccion-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.producto span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #888;
+}
+
+/* Estilos para el contenedor principal */
+.iniciO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustar la altura según necesidades */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Estilos para la sección */
+.iniciO section {
+    background-color: #fff; /* Color de fondo */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%;
+}
+
+/* Estilos para el título */
+.iniciO section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el formulario */
+.iniciO section form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las etiquetas */
+.iniciO section form label {
+    margin-bottom: 10px;
+    color: #555; /* Color del texto */
+}
+
+/* Estilos para los campos de entrada */
+.iniciO section form input[type="text"],
+.iniciO section form input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Color del borde */
+    font-size: 16px;
+}
+
+/* Estilos para el botón de enviar */
+.iniciO section form input[type="submit"] {
+    padding: 15px;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.iniciO section form input[type="submit"]:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Contenedor principal */
+.ayudA {
+    padding: 20px;
+}
+
+/* Sección de preguntas */
+.ayudA section {
+    margin-top: 20px;
+}
+
+.ayudA section h1 {
+    margin-bottom: 20px;
+}
+
+.ayudA section p {
+    margin-bottom: 10px;
+    color: #555; /* Texto gris oscuro */
+}
+
+/* Estilos para el contenido principal */
+.ayudA {
+    padding: 20px;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Estilos para la sección de preguntas */
+.ayudA section {
+    margin-top: 20px;
+}
+
+.ayudA section h1 {
+    margin-bottom: 20px;
+}
+
+.ayudA section p {
+    margin-bottom: 10px;
+}
+
+/*RESPONSIVE INCIO*/
+
+/* Media queries para Celulares */
+@media only screen and (max-width: 320px) {
+    .main-header {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+
+    .logo-container img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-nav li {
+        margin-right: 10px;
+    }
+
+    .info h3 {
+        font-size: 14px;
+    }
+
+    .social-media a {
+        margin: 0 5px;
+    }
+}
+
+/* Media queries para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-header {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+
+    .logo-container img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+}
+
+/*RESPONSIVE PARA SECCION PRODUCTOS*/
+
+/* Media queries para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .seccion-1 {
+        gap: 30px;
+    }
+
+    .producto {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .main-header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+
+    .logo-container img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .seccion-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .producto {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .producto h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .producto span {
+        font-size: 14px;
+    }
+
+    .boton-compra {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+}   
