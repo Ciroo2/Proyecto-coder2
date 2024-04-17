@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Estilos generales para el header */
+.main-header {
+  background-color: black; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el logo */
+.logo-container img {
+  width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  flex-grow: 1; /* Permite que la barra de navegación ocupe todo el espacio disponible */
+}
+
+/* Estilos para la lista de menú */
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
+.menu-list li {
+  margin-right: 20px; /* Espacio entre elementos del menú */
+}
+.menu-list li a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none;
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 500; /* Grosor de la fuente */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+.menu-list li a:hover {
+  color: grey; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la sección de usuario */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para los iconos */
+.user-icon,
+.search-icon,
+.menu-icon {
+  margin-left: 20px; /* Espacio entre los iconos */
+  cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+.user-icon img,
+.search-icon img,
+.menu-icon img {
+  width: 24px; /* Tamaño de los iconos */
+  height: 24px;
+}
+
+/* Estilo para la imagen */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según tu necesidad */
+  overflow: hidden;
+}
+.image-container .imagenFondo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(5px); /* Ajusta el nivel de desenfoque según tu preferencia */
+  transition: filter 0.5s ease; /* Animación de desenfoque */
+}
+.image-container .imagenFondo:hover {
+  filter: blur(0px); /* Elimina el desenfoque al pasar el mouse */
+}
+
+/* Estilo para el botón */
+.shop-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Animación de cambio */
+  opacity: 0.7; /* Opacidad predeterminada */
+}
+.shop-now a {
+  color: white;
+  text-decoration: none;
+}
+.shop-now:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Cambio de color al pasar el mouse */
+  transform: translate(-50%, -50%) scale(1.05); /* Escala y mueve el botón al pasar el mouse */
+  opacity: 1; /* Ajusta la opacidad al pasar el mouse */
+}
+
+/* Estilos generales para el footer */
+footer {
+  background-color: black; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Estilos para la navegación */
+  /* Estilos para la sección de información */
+  /* Estilos para los enlaces de redes sociales */
+  /* Estilos para el texto de derechos de autor */
+}
+footer .logo-container img {
+  width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-bottom: 20px; /* Espacio debajo del logo */
+}
+footer .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-nav ul li {
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+footer .footer-nav ul li a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none;
+}
+footer .footer-nav ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+footer .info h3 {
+  margin-top: 20px; /* Espacio arriba del título */
+}
+footer .info ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .info ul li {
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+footer .info ul li a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none;
+}
+footer .info ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+footer .social-media a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none;
+  margin: 0 10px; /* Espacio entre elementos */
+}
+footer .social-media a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+footer p {
+  margin-top: 20px; /* Espacio arriba del texto */
+}
+
+/* Estilos del menú hamburguesa */
+.menu-icon {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  cursor: pointer;
+}
+
+.main.iniciO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=password] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type=submit] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+.contactO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustar la altura según necesidades */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+.contactO section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Ancho máximo del formulario */
+  width: 100%;
+}
+
+.contactO section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formularioContacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formularioContacto label {
+  margin-bottom: 10px;
+}
+
+.formularioContacto input[type=text],
+.formularioContacto input[type=email],
+.formularioContacto textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.formularioContacto input[type=submit] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.formularioContacto input[type=submit]:hover {
+  background-color: black;
+}
+
+.imagenRopa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.seccion-ropa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+.producto img:hover {
+  transform: scale(1.05);
+}
+.producto .detalles {
+  padding: 20px;
+  text-align: center;
+}
+.producto .detalles h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+.producto .detalles span {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 1.2em;
+}
+.producto .boton-compra {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+.producto .boton-compra:hover {
+  background-color: #cc3700;
+}
+
+.iniciO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustar la altura según necesidades */
+  background-color: #f4f4f4; /* Color de fondo */
+}
+
+.iniciO section {
+  background-color: #fff; /* Color de fondo */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ancho máximo del formulario */
+  width: 100%;
+}
+.iniciO section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Color del texto */
+}
+.iniciO section form {
+  display: flex;
+  flex-direction: column;
+}
+.iniciO section form label {
+  margin-bottom: 10px;
+  color: #555; /* Color del texto */
+}
+.iniciO section form input[type=text],
+.iniciO section form input[type=password] {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Color del borde */
+  font-size: 16px;
+}
+.iniciO section form input[type=submit] {
+  padding: 15px;
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+.iniciO section form input[type=submit]:hover {
+  background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+.promociones {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.promociones .promocion {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 0 20px;
+}
+.promociones .promocion img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.promociones .promocion .detalles {
+  padding: 20px;
+}
+.promociones .promocion .detalles h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.promociones .promocion .precio-anterior {
+  color: #999;
+  text-decoration: line-through;
+}
+.promociones .promocion .precio-nuevo {
+  color: #ff4500; /* Color naranja */
+  font-weight: bold;
+}
+.promociones .promocion button {
+  background-color: #007bff; /* Color azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+.promociones .promocion button:hover {
+  background-color: #0056b3; /* Color azul más oscuro */
+}
+
+/* Estilos responsive */
+/* Pantallas de 1024px o más */
+@media only screen and (min-width: 1024px) {
+  .menu-list {
+    display: flex;
+  }
+  .menu-list li {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+/* Pantallas de 768px a 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-list {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+}
+/* Pantallas de 425px a 767px */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .main-header {
+    padding: 10px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-list li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .promocion {
+    width: calc(100% - 20px);
+  }
+}
+/* Pantallas de 375px a 424px */
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .main-header {
+    padding: 5px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-list li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .promocion {
+    width: calc(100% - 20px);
+  }
+}/*# sourceMappingURL=style.css.map */
